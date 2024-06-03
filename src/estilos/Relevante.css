@@ -1,0 +1,110 @@
+.relevante {
+  width: 40rem;
+  /* min-height: 40rem; */
+  margin: 1.2rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  backdrop-filter: blur(3px) brightness(.9);
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  /* overflow: hidden; */
+}
+
+.relevante__pagina {
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  transition: 2s;
+}
+
+.relevante__enlace {
+  backdrop-filter: blur(1.5px) brightness(0.6);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  transition: .75s;
+}
+
+.relevante__enlace:hover {
+  background: rgb(97 218 251 / 55%);
+}
+
+.relevante__link {
+  color: #61dafb;
+  padding: 7px;
+  display: flex;
+  font-weight: 500;
+  letter-spacing: .7px;
+  text-decoration: none;
+  transition: .35s;
+}
+
+.relevante__link:hover {
+  color: black;
+}
+
+.relevante__titulo {
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0 25px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.relevante:hover .relevante__titulo {
+  backdrop-filter: brightness(.5);
+  transition: 1;
+  opacity: 1;
+}
+
+.relevante__boxImagen {
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  filter: brightness(1);
+}
+
+.relevante__pagina:hover {
+  transform: scale(1.035);
+  /* filter: grayscale(25%); */
+  /* border-image: fill 0 linear-gradient(#0001, #000); */
+}
+
+.relevante__imagen {
+  height: 225px;
+  background-image: url('https://media.istockphoto.com/id/147456329/es/foto/es-ingeniero-en-acci%C3%B3n-configuraci%C3%B3n-de-los-servidores.jpg?b=1&s=612x612&w=0&k=20&c=TV8dmUxxx1DK-MZb7OJN6xHXBuBT5cpRSNc43mwYEnU=');
+}
+
+.relevante__textos {
+  width: 100%;
+  height: 100%;
+  padding: 27px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  display: none;
+  align-items: center;
+}
+
+.relevante__descripcion {
+  color: #fff;
+  font-size: 1.8rem;
+  overflow: hidden;
+}

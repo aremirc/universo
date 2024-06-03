@@ -1,0 +1,36 @@
+.icono__envoltura {
+    padding: 3px 5px;
+}
+
+.icono__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 3px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.icono__logo::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 2px solid #fdae38;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.icono__logo:hover {
+    background-color: #fdbf38;
+}
+
+.icono__logo:hover::before {
+    opacity: 1;
+}

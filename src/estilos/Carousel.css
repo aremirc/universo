@@ -1,0 +1,96 @@
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel__cambio {
+  flex: 1;
+  height: 100%;
+  background-color: #f7b143;
+  background-position: center;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.carousel__barraBox {
+  width: 5rem;
+  height: .5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: .1rem solid rgba(255, 230, 0, 0.651);
+  border-radius: 1rem;
+  display: flex;
+}
+
+.carousel__barra {
+  width: 100%;
+  height: 100%;
+  background-color: #f7b143;
+  animation: fillCampo 7s infinite ease-in;
+}
+
+.carousel__boton {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  color: rgba(255, 230, 0, 0.651);
+  font-size: 2.1rem;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.carousel__boton:hover {
+  transform: scale(1.25);
+}
+
+.carousel__boton--ade {
+  right: 3%;
+}
+
+.carousel__boton--ade:hover {
+  animation: sombra 1.5s infinite;
+}
+
+.carousel__boton--atr {
+  left: 3%;
+}
+
+.carousel__boton--atr:hover {
+  animation: sombra_r 1.5s infinite;
+}
+
+@keyframes fillCampo {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes sombra {
+  0% {
+    text-shadow: 0 0 0 #f7b143;
+  }
+
+  100% {
+    text-shadow: 15px 0 12px rgba(247, 177, 67, 0);
+  }
+}
+
+@keyframes sombra_r {
+  0% {
+    text-shadow: 0 0 0 #f7b143;
+  }
+
+  100% {
+    text-shadow: -15px 0 12px rgba(247, 177, 67, 0);
+  }
+}

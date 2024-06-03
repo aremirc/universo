@@ -1,0 +1,25 @@
+.menu {
+  padding: 2rem;
+}
+
+.menu__link {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: .25rem;
+  text-decoration: none;
+  position: relative;
+  transition: all .5s ;
+}
+
+.menu__link::before {
+  width: 0;
+  height: .15rem;
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  background: #fff;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+}
